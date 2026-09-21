@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CPP\\Prak Desain Patern Game\\Balatro\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA8373A-4CB5-4FF5-8F38-12E585FE0598}|Balatro\\Balatro.vcxproj|D:\\CPP\\Prak Desain Patern Game\\Balatro\\Balatro\\Task 1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6EA8373A-4CB5-4FF5-8F38-12E585FE0598}|Balatro\\Balatro.vcxproj|solutionrelative:Balatro\\Task 1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Task 1.cpp",
+              "DocumentMoniker": "D:\\CPP\\Prak Desain Patern Game\\Balatro\\Balatro\\Task 1.cpp",
+              "RelativeDocumentMoniker": "Balatro\\Task 1.cpp",
+              "ToolTip": "D:\\CPP\\Prak Desain Patern Game\\Balatro\\Balatro\\Task 1.cpp*",
+              "RelativeToolTip": "Balatro\\Task 1.cpp*",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAqwGwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-21T10:11:48.528Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
