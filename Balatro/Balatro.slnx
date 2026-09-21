@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Balatro/Balatro.vcxproj" />
+  <Project Path="Balatro/Balatro.vcxproj" Id="6ea8373a-4cb5-4ff5-8f38-12e585fe0598" />
 </Solution>
