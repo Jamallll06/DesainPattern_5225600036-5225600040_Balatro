@@ -67,3 +67,42 @@ public:
     }
 };
 
+//INVARIANT
+// Mengatur core loop yang bersifat invariant.
+class GameSession {
+private:
+    GameState state;
+    PlayerController player;
+    SnakeSystem system;
+    StateUpdater updater;
+
+public:
+    void StartGame() {
+        cout << "=== Core Loop Snake Klasik ===" << endl;
+        cout << "Referensi: game Snake klasik berbasis grid." << endl << endl;
+
+        // Urutan fase berikut merupakan invariant.
+        while (!state.IsGameOver()) {
+            player.PlayerAction();
+            system.ResolveSystem(state);
+            updater.UpdateState(state);
+
+            cout << "[5] Mengulang sampai kondisi Game Over terjadi."
+                << endl << endl;
+
+            // Placeholder agar skeleton C++ tidak berjalan tanpa akhir.
+            // Pada implementasi game lengkap, nilai ini ditentukan oleh
+            // sistem collision.
+            state.SetGameOver(true);
+        }
+
+        cout << "Game Over. Skor akhir: " << state.score << endl;
+    }
+};
+
+int main() {
+    GameSession session;
+    session.StartGame();
+
+    return 0;
+}
