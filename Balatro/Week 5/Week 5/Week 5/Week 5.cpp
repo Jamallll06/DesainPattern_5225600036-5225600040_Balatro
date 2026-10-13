@@ -77,7 +77,7 @@ enum class HandRank {
     FlushHouse,
     FlushFive
 };
-
+//linklist
 string handRankName(HandRank rank) {
     switch (rank) {
     case HandRank::HighCard: return "High Card";
@@ -185,6 +185,7 @@ HandRank evaluateHand(const Hand& hand) {
 // =====================================================
 // 4. POKER HAND CHECKER
 // =====================================================
+// chain of respons bility
 
 class PokerHandChecker {
 protected:
@@ -388,7 +389,7 @@ public:
 };
 
 // =====================================================
-// 8. BLIND SYSTEM
+// 8. BLIND SYSTEM/Leveling
 // =====================================================
 
 class BlindRule {
