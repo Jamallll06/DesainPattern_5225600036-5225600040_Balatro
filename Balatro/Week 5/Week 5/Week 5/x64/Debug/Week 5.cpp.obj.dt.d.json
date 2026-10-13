@@ -127,7 +127,21 @@
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.26100.0\\ucrt\\ctype.h",
             "d:\\cpp\\vs\\vc\\tools\\msvc\\14.51.36231\\include\\clocale",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.26100.0\\ucrt\\locale.h",
-            "d:\\cpp\\vs\\vc\\tools\\msvc\\14.51.36231\\include\\ostream"
+            "d:\\cpp\\vs\\vc\\tools\\msvc\\14.51.36231\\include\\ostream",
+            "d:\\cpp\\vs\\vc\\tools\\msvc\\14.51.36231\\include\\vector",
+            "d:\\cpp\\vs\\vc\\tools\\msvc\\14.51.36231\\include\\__msvc_bit_utils.hpp",
+            "d:\\cpp\\vs\\vc\\tools\\msvc\\14.51.36231\\include\\map",
+            "d:\\cpp\\vs\\vc\\tools\\msvc\\14.51.36231\\include\\xtree",
+            "d:\\cpp\\vs\\vc\\tools\\msvc\\14.51.36231\\include\\xnode_handle.h",
+            "d:\\cpp\\vs\\vc\\tools\\msvc\\14.51.36231\\include\\string",
+            "d:\\cpp\\vs\\vc\\tools\\msvc\\14.51.36231\\include\\sstream",
+            "d:\\cpp\\vs\\vc\\tools\\msvc\\14.51.36231\\include\\algorithm",
+            "d:\\cpp\\vs\\vc\\tools\\msvc\\14.51.36231\\include\\__msvc_heap_algorithms.hpp",
+            "d:\\cpp\\vs\\vc\\tools\\msvc\\14.51.36231\\include\\__msvc_int128.hpp",
+            "d:\\cpp\\vs\\vc\\tools\\msvc\\14.51.36231\\include\\__msvc_minmax.hpp",
+            "d:\\cpp\\vs\\vc\\tools\\msvc\\14.51.36231\\include\\iomanip",
+            "d:\\cpp\\vs\\vc\\tools\\msvc\\14.51.36231\\include\\xlocmon",
+            "d:\\cpp\\vs\\vc\\tools\\msvc\\14.51.36231\\include\\xloctime"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
