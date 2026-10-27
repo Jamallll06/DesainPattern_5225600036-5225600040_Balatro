@@ -30,6 +30,18 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BlindRule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChosenHand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RewardRule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoringRule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameManager.h">
@@ -45,6 +57,21 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="JokerCard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BlindRule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Card.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChosenHand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RewardRule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoringRule.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

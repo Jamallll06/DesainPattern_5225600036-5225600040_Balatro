@@ -19,18 +19,27 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BlindRule.cpp" />
+    <ClCompile Include="ChosenHand.cpp" />
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="HandGenerator.cpp" />
     <ClCompile Include="HandPlayer.cpp" />
     <ClCompile Include="JokerCard.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="RewardRule.cpp" />
+    <ClCompile Include="ScoringRule.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BlindRule.h" />
+    <ClInclude Include="Card.h" />
+    <ClInclude Include="ChosenHand.h" />
     <ClInclude Include="GameManager.h" />
     <ClInclude Include="Hand.h" />
     <ClInclude Include="HandGenerator.h" />
     <ClInclude Include="HandPlayer.h" />
     <ClInclude Include="JokerCard.h" />
+    <ClInclude Include="RewardRule.h" />
+    <ClInclude Include="ScoringRule.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
