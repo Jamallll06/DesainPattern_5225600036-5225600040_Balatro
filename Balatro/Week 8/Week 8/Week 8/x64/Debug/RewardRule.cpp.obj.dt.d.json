@@ -1,0 +1,12 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\download\\designpattern_cpp_lengkap\\rewardrule.cpp",
+        "ProvidedModule": "",
+        "Includes": [
+            "d:\\download\\designpattern_cpp_lengkap\\rewardrule.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,11 @@
+﻿  BlindRule.cpp
+  ChosenHand.cpp
+  GameManager.cpp
+  HandGenerator.cpp
+  HandPlayer.cpp
+  JokerCard.cpp
+  main.cpp
+  RewardRule.cpp
+  ScoringRule.cpp
+  Generating Code...
+  Week 8.vcxproj -> D:\CPP\Prak Desain Patern Game\Balatroo\Balatroooo\Balatro\Week 8\Week 8\x64\Debug\Week 8.exe
