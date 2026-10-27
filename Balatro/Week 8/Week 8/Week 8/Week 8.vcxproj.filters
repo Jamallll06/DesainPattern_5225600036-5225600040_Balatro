@@ -15,40 +15,37 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\..\..\Download\DesignPattern_CPP_Lengkap\GameManager.cpp">
+    <ClCompile Include="GameManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\..\..\..\Download\DesignPattern_CPP_Lengkap\HandGenerator.cpp">
+    <ClCompile Include="HandGenerator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\..\..\..\Download\DesignPattern_CPP_Lengkap\HandPlayer.cpp">
+    <ClCompile Include="HandPlayer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\..\..\..\Download\DesignPattern_CPP_Lengkap\JokerCard.cpp">
+    <ClCompile Include="JokerCard.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\..\..\..\Download\DesignPattern_CPP_Lengkap\main.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\..\..\..\Download\DesignPattern_CPP_Lengkap\GameManager.h">
+    <ClInclude Include="GameManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\..\..\..\Download\DesignPattern_CPP_Lengkap\Hand.h">
+    <ClInclude Include="Hand.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\..\..\..\Download\DesignPattern_CPP_Lengkap\HandGenerator.h">
+    <ClInclude Include="HandGenerator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\..\..\..\Download\DesignPattern_CPP_Lengkap\HandPlayer.h">
+    <ClInclude Include="HandPlayer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\..\..\..\Download\DesignPattern_CPP_Lengkap\JokerCard.h">
+    <ClInclude Include="JokerCard.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="..\..\..\..\..\..\..\..\Download\DesignPattern_CPP_Lengkap\README.txt" />
   </ItemGroup>
 </Project>

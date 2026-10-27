@@ -18,6 +18,20 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="HandGenerator.cpp" />
+    <ClCompile Include="HandPlayer.cpp" />
+    <ClCompile Include="JokerCard.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="Hand.h" />
+    <ClInclude Include="HandGenerator.h" />
+    <ClInclude Include="HandPlayer.h" />
+    <ClInclude Include="JokerCard.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -138,23 +152,6 @@
       <EnableSegmentHeap>true</EnableSegmentHeap>
     </Manifest>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\..\..\Download\DesignPattern_CPP_Lengkap\GameManager.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\..\Download\DesignPattern_CPP_Lengkap\HandGenerator.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\..\Download\DesignPattern_CPP_Lengkap\HandPlayer.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\..\Download\DesignPattern_CPP_Lengkap\JokerCard.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\..\Download\DesignPattern_CPP_Lengkap\main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\..\..\..\Download\DesignPattern_CPP_Lengkap\GameManager.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\..\Download\DesignPattern_CPP_Lengkap\Hand.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\..\Download\DesignPattern_CPP_Lengkap\HandGenerator.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\..\Download\DesignPattern_CPP_Lengkap\HandPlayer.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\..\Download\DesignPattern_CPP_Lengkap\JokerCard.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="..\..\..\..\..\..\..\..\Download\DesignPattern_CPP_Lengkap\README.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
