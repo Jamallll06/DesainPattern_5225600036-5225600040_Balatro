@@ -3,23 +3,18 @@
 #include <random>
 #include <vector>
 
-Hand HandGenerator::generateHand() {
+RandomHandGenerator::RandomHandGenerator() : rng(std::random_device{}()) {}
+
+Hand RandomHandGenerator::generateHand(int count) {
     std::vector<Card> deck;
     const char suits[] = {'H', 'D', 'C', 'S'};
-
     for (char suit : suits) {
-        for (int rank = 2; rank <= 14; ++rank) {
-            deck.push_back({rank, suit});
-        }
+        for (int rank = 2; rank <= 14; ++rank) deck.push_back({rank, suit});
     }
 
-    static std::random_device rd;
-    static std::mt19937 rng(rd());
     std::shuffle(deck.begin(), deck.end(), rng);
-
     Hand hand;
-    for (int i = 0; i < 5; ++i) {
-        hand.cards.push_back(deck[i]);
-    }
+    const int drawCount = std::max(0, std::min(count, static_cast<int>(deck.size())));
+    hand.cards.assign(deck.begin(), deck.begin() + drawCount);
     return hand;
 }

@@ -1,16 +1,17 @@
 #include "BlindRule.h"
 
-BlindRule::BlindRule(int target)
-    : targetScore(target >= 0 ? target : 100) {}
-
-bool BlindRule::checkBlind(int score) const {
-    return score >= targetScore;
+std::string BlindRule::getName(int round) const {
+    if (round == 1) return "Small Blind";
+    if (round == 2) return "Big Blind";
+    return "Boss Blind";
 }
 
-void BlindRule::setTargetScore(int target) {
-    if (target >= 0) targetScore = target;
+int BlindRule::getTarget(int round) const {
+    if (round == 1) return 40;
+    if (round == 2) return 70;
+    return 100;
 }
 
-int BlindRule::getTargetScore() const {
-    return targetScore;
+bool BlindRule::checkBlind(int score, int round) const {
+    return score >= getTarget(round);
 }

@@ -1,13 +1,10 @@
 #pragma once
 
+#include <string>
+
 class BlindRule {
-private:
-    int targetScore;
-
 public:
-    explicit BlindRule(int target = 100);
-
-    bool checkBlind(int score) const;
-    void setTargetScore(int target);
-    int getTargetScore() const;
+    std::string getName(int round) const;
+    int getTarget(int round) const;
+    bool checkBlind(int score, int round) const;
 };

@@ -1,20 +1,21 @@
 #pragma once
+
 #include "Hand.h"
+#include <vector>
 
 class ChosenHand {
-private:
-    Hand selectedHand;
-    int maxCards;
-
 public:
-    explicit ChosenHand(int max = 5);
+    static const std::size_t MAX_CARDS = 5;
 
     bool addCard(const Card& card);
-    bool removeCard(int index);
-    void clearHand();
+    bool toggleCard(const Card& card);
+    void setCards(const std::vector<Card>& cards);
+    void clear();
+    std::size_t size() const;
+    bool isValid() const;
+    Hand toHand() const;
+    const std::vector<Card>& getCards() const;
 
-    Hand getHand() const;
-    int getCardCount() const;
-    bool isEmpty() const;
-    bool isFull() const;
+private:
+    std::vector<Card> selectedCards;
 };

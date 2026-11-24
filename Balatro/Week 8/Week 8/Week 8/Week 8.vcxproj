@@ -20,26 +20,33 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BlindRule.cpp" />
+    <ClCompile Include="CheckerDemo.cpp" />
     <ClCompile Include="ChosenHand.cpp" />
-    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="Hand.cpp" />
+    <ClCompile Include="HandEvaluator.cpp" />
     <ClCompile Include="HandGenerator.cpp" />
     <ClCompile Include="HandPlayer.cpp" />
-    <ClCompile Include="JokerCard.cpp" />
+    <ClCompile Include="HandRank.cpp" />
+    <ClCompile Include="HandScoring.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="RewardRule.cpp" />
-    <ClCompile Include="ScoringRule.cpp" />
+    <ClCompile Include="RunSession.cpp" />
+    <ClCompile Include="ShopSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BlindRule.h" />
     <ClInclude Include="Card.h" />
+    <ClInclude Include="CheckerDemo.h" />
     <ClInclude Include="ChosenHand.h" />
-    <ClInclude Include="GameManager.h" />
     <ClInclude Include="Hand.h" />
+    <ClInclude Include="HandEvaluator.h" />
     <ClInclude Include="HandGenerator.h" />
     <ClInclude Include="HandPlayer.h" />
-    <ClInclude Include="JokerCard.h" />
+    <ClInclude Include="HandRank.h" />
+    <ClInclude Include="HandScoring.h" />
     <ClInclude Include="RewardRule.h" />
-    <ClInclude Include="ScoringRule.h" />
+    <ClInclude Include="RunSession.h" />
+    <ClInclude Include="ShopSystem.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>

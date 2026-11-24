@@ -1,27 +1,18 @@
 DESIGN PATTERN - PROJECT C++
 
-Daftar file:
-- Card.h, Hand.h
-- ChosenHand.h, ChosenHand.cpp
-- HandGenerator.h, HandGenerator.cpp
-- HandPlayer.h, HandPlayer.cpp
-- ScoringRule.h, ScoringRule.cpp
-- JokerCard.h, JokerCard.cpp
-- BlindRule.h, BlindRule.cpp
-- RewardRule.h, RewardRule.cpp
-- GameManager.h, GameManager.cpp
-- main.cpp
-
 Kompilasi dengan GCC:
-g++ -std=c++11 main.cpp ChosenHand.cpp HandGenerator.cpp HandPlayer.cpp ScoringRule.cpp JokerCard.cpp BlindRule.cpp RewardRule.cpp GameManager.cpp -o DesignPattern
+g++ -std=c++14 main.cpp BlindRule.cpp CheckerDemo.cpp ChosenHand.cpp Hand.cpp HandEvaluator.cpp HandGenerator.cpp HandPlayer.cpp HandRank.cpp HandScoring.cpp RewardRule.cpp RunSession.cpp ShopSystem.cpp -o DesignPattern
 
 Jalankan:
 ./DesignPattern
 
-Catatan:
-- HandGenerator mengambil 5 kartu acak dari satu dek 52 kartu tanpa duplikasi.
-- ScoringRule menjumlahkan nilai rank kartu.
-- Joker menambahkan bonus 10 poin.
-- BlindRule menggunakan target 100 poin.
-- RewardRule memberi 0 jika kalah; jika menang, 20 + skor/10.
-- Angka skor, bonus, target, dan hadiah adalah contoh implementasi karena dokumen tugas tidak menetapkan aturan detail.
+Kontrol pemilihan kartu:
+- Setiap ronde pemain mendapat 8 kartu acak dari satu dek 52 kartu.
+- Ketik nomor kartu untuk memilihnya atau membatalkan pilihan.
+- Pilih minimal 1 dan maksimal 5 kartu; tekan P untuk memainkan hand.
+- Tekan Q untuk mengakhiri run.
+- Kartu yang dibagikan tidak memiliki duplikasi.
+
+Checker kombinasi kartu memakai Chain of Responsibility. Kode dipisahkan
+berdasarkan tanggung jawab kelas pada file header dan implementasi masing-masing.
+Skor, blind, dan reward merupakan aturan contoh yang digunakan simulasi ini.

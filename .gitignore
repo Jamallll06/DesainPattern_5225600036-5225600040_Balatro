@@ -1,0 +1,7 @@
+# Visual Studio IDE state and generated build output
+.vs/
+**/.vs/
+**/x64/
+**/Debug/
+**/Release/
+*.ipch

@@ -1,36 +1,46 @@
 #include "ChosenHand.h"
 #include <algorithm>
 
-ChosenHand::ChosenHand(int max) : maxCards(max > 0 ? max : 5) {}
+const std::size_t ChosenHand::MAX_CARDS;
 
 bool ChosenHand::addCard(const Card& card) {
-    if (isFull()) return false;
-    selectedHand.cards.push_back(card);
+    if (selectedCards.size() >= MAX_CARDS) return false;
+    selectedCards.push_back(card);
     return true;
 }
 
-bool ChosenHand::removeCard(int index) {
-    if (index < 0 || index >= getCardCount()) return false;
-    selectedHand.cards.erase(selectedHand.cards.begin() + index);
-    return true;
+bool ChosenHand::toggleCard(const Card& card) {
+    auto selected = std::find(selectedCards.begin(), selectedCards.end(), card);
+    if (selected != selectedCards.end()) {
+        selectedCards.erase(selected);
+        return true;
+    }
+    return addCard(card);
 }
 
-void ChosenHand::clearHand() {
-    selectedHand.cards.clear();
+void ChosenHand::setCards(const std::vector<Card>& cards) {
+    selectedCards.assign(cards.begin(), cards.begin() +
+        std::min(cards.size(), MAX_CARDS));
 }
 
-Hand ChosenHand::getHand() const {
-    return selectedHand;
+void ChosenHand::clear() {
+    selectedCards.clear();
 }
 
-int ChosenHand::getCardCount() const {
-    return static_cast<int>(selectedHand.cards.size());
+std::size_t ChosenHand::size() const {
+    return selectedCards.size();
 }
 
-bool ChosenHand::isEmpty() const {
-    return selectedHand.cards.empty();
+bool ChosenHand::isValid() const {
+    return !selectedCards.empty() && selectedCards.size() <= MAX_CARDS;
 }
 
-bool ChosenHand::isFull() const {
-    return getCardCount() >= maxCards;
+Hand ChosenHand::toHand() const {
+    Hand hand;
+    hand.cards = selectedCards;
+    return hand;
+}
+
+const std::vector<Card>& ChosenHand::getCards() const {
+    return selectedCards;
 }

@@ -1,7 +1,19 @@
 #pragma once
-#include "Hand.h"
 
-class HandGenerator {
+#include "Hand.h"
+#include <random>
+
+class IHandGenerator {
 public:
-    Hand generateHand();
+    virtual ~IHandGenerator() = default;
+    virtual Hand generateHand(int count = 8) = 0;
+};
+
+class RandomHandGenerator : public IHandGenerator {
+public:
+    RandomHandGenerator();
+    Hand generateHand(int count = 8) override;
+
+private:
+    std::mt19937 rng;
 };
